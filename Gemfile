@@ -12,6 +12,10 @@ gem 'turbolinks'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
