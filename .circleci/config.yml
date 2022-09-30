@@ -6,12 +6,12 @@ jobs:
         environment:
           RAILS_ENV: test
           PGHOST: 127.0.0.1
-          PGUSER: $PGUSER
+          PGUSER: rails_template
       - image: circleci/postgres:12.4
         environment:
-          POSTGRES_USER: $PGUSER
+          POSTGRES_USER: rails_template
           POSTGRES_PASSWORD: $POSTGRES_PASSWORD
-          POSTGRES_DB: $POSTGRES_DB
+          POSTGRES_DB: rails_template_test
     steps:
       - checkout
       - restore_cache:
