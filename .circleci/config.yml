@@ -7,7 +7,7 @@ jobs:
           RAILS_ENV: test
           PGHOST: 127.0.0.1
           PGUSER: $PGUSER
-      - image: cimg/postgres:12.4
+      - image: circleci/postgres:12.4
         environment:
           POSTGRES_USER: $PGUSER
           POSTGRES_PASSWORD: $POSTGRES_PASSWORD
