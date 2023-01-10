@@ -24,6 +24,6 @@ end
 
 group :development do
   gem 'annotate'
-  gem 'listen', '~> 3.3'
+  gem 'listen', '~> 3.8'
   gem 'spring'
 end
